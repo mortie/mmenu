@@ -26,3 +26,10 @@ Just run it like dmenu\_run:
 
 Just put the `mmenu` script somewhere in your path. After that, change your
 window manager's menu hotkey from `dmenu_run` to `mmenu`.
+
+Copypasta:
+
+``` bash
+curl https://raw.githubusercontent.com/mortie/mmenu/master/mmenu | sudo tee /usr/local/bin/mmenu
+sudo chmod +x /usr/local/bin/mmenu
+```
