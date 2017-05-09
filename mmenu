@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 ###################################################
 # This is a wrapper around dmenu, providing basic #
 # calculator-like functionality using python.     #
