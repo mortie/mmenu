@@ -7,14 +7,16 @@ In this new run, only the entry '$' is available, and will exit the session;
 any other input will again be fed into python.
 
 * Some more variables and functions are available in your expression:
-	* ans: The result of the previous expression.
-	* base(num, b=16): convert num to base b.
+	* `ans`: The result of the previous expression.
+	* `base(num, b=16)`: convert num to base b.
 
 * Additional stuff:
-	* `clip` after expressions will copy ans to your clipboard with 'xsel -ib'.
-	* `$c` or `$C` will be replaced with your clipboard content using 'xsel -b'.
+	* `clip` after expressions will copy ans to your clipboard with `xsel -ib`.
+	* `$c` or `$C` will be replaced with your clipboard content using `xsel -b`.
 
-**Screencast**: https://gfycat.com/ElectricDesertedGrub
+## Screencast
+
+https://gfycat.com/ElectricDesertedGrub
 
 ## Usage
 
@@ -27,7 +29,7 @@ Just run it like dmenu\_run:
 Just put the `mmenu` script somewhere in your path. After that, change your
 window manager's menu hotkey from `dmenu_run` to `mmenu`.
 
-Copypasta:
+These commands should do it:
 
 ``` bash
 curl https://raw.githubusercontent.com/mortie/mmenu/master/mmenu | sudo tee /usr/local/bin/mmenu
