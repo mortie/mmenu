@@ -57,7 +57,7 @@ run() {
 	fi
 
 	# Replace $c with clipboard contents
-	export paste=$(xsel -b)
+	export paste="$(xsel -b)"
 	cmd=$(echo -n "$cmd" | awk '{ gsub("\\$[cC]", ENVIRON["paste"]); print($0) }')
 
 	# If not in calculator mode, and the command exists, run it
@@ -97,7 +97,7 @@ print('{!r}'.format(res))
 "
 
 		# Run python, and then rerun with python's output as input
-		ans=$(python -c "$pycode" 2>/dev/null)
+		ans="$(python -c "$pycode" 2>/dev/null)"
 		if [ "$?" != 0 ]; then
 			ans="'Syntax Error'"
 		fi
