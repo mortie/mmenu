@@ -73,6 +73,9 @@ run() {
 	else
 		pycode="
 import math
+from math import ceil, floor, log, log10, pow, sqrt, \
+	cos, sin, tan, acos, asin, atan, atan2, hypot, degrees, radians, \
+	pi, e
 
 ans = $([ "$1" = "" ] && echo 0 || echo "$1")
 
