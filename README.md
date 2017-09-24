@@ -8,7 +8,8 @@ any other input will again be fed into python.
 
 * Some more variables and functions are available in your expression:
 	* `ans`: The result of the previous expression.
-	* `base(num, b=16)`: convert num to base b.
+	* `base(num, b=16)`: Convert num to base b.
+	* `solve(s)`: Solve an equation.
 
 * Additional stuff:
 	* `clip` after expressions will copy ans to your clipboard with `xsel -ib`.
